@@ -40,6 +40,10 @@ PrefabInstance:
       propertyPath: ShapeModule.radiusThickness
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3075448419585140172, guid: 6483cdcc7f4a9624c8407dcc816219f1, type: 3}
+      propertyPath: time
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8583215843816152119, guid: 6483cdcc7f4a9624c8407dcc816219f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.657583
