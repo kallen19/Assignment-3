@@ -12,6 +12,8 @@ public class BackgroundColor : MonoBehaviour
     private float currentTime;
     private int colorIndex;
 
+    [SerializeField] private float timeDelay;
+
     private void Awake()
     {
         cameraRef = Camera.main;
@@ -20,7 +22,7 @@ public class BackgroundColor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentTime = time + timeDelay;
     }
 
     // Update is called once per frame
