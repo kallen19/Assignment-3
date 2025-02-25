@@ -4,7 +4,7 @@ public class lifeTime : MonoBehaviour
 {
     public float lifetime;
 
-    void Update()
+    void Start()
     {
         Destroy (gameObject, lifetime);
     }
