@@ -201,11 +201,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6399776957387330376, guid: 7602765c0340f95489729d49b7c49a49, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6024483214985071090, guid: 7602765c0340f95489729d49b7c49a49, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1018634024}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6399776957387330376, guid: 7602765c0340f95489729d49b7c49a49, type: 3}
       insertIndex: 2
@@ -222,6 +225,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6399776957387330376, guid: 7602765c0340f95489729d49b7c49a49, type: 3}
   m_PrefabInstance: {fileID: 63311259}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &190115544 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6024483214985071090, guid: 7602765c0340f95489729d49b7c49a49, type: 3}
+  m_PrefabInstance: {fileID: 63311259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &190115545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationDuration: 8
-  rotationAxis: {x: 20, y: 40, z: 5}
+  rotationAxis: {x: 20, y: 80, z: 5}
 --- !u!199 &190115546
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -396,7 +404,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -567,7 +575,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5402,11 +5410,11 @@ Transform:
   m_GameObject: {fileID: 1018634023}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.47, y: -3.14, z: -72.97}
-  m_LocalScale: {x: 1, y: 1, z: 2}
+  m_LocalPosition: {x: 1.8900001, y: -1.865, z: -4.299999}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 190115544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1018634026
 MonoBehaviour:
@@ -5809,4 +5817,3 @@ SceneRoots:
   - {fileID: 1626070528}
   - {fileID: 222486002}
   - {fileID: 63311259}
-  - {fileID: 1018634024}
