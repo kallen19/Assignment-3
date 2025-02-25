@@ -62,7 +62,7 @@ public class Spawn : MonoBehaviour {
         }
 
         int whichDivision = 0;
-        for (int i = 0; i < star.Count; i++)
+        for (int i = star.Count - 1; i >= 0; i--)
         {
          star[i].transform.localScale = 2 * new Vector3(amplitudes[whichDivision],amplitudes[whichDivision],amplitudes[whichDivision]);
          if (whichDivision == numDivisions - 1)
@@ -88,6 +88,8 @@ public class Spawn : MonoBehaviour {
    Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), Random.Range (-spawnValues.y, spawnValues.y) + currentDivision * yOffset, Random.Range (-spawnValues.z, spawnValues.z));
 
    GameObject objs = Instantiate (ennemies[currentDivision], spawnPosition + transform.TransformPoint (0, 0, 0), gameObject.transform.rotation);
+
+   objs.AddComponent<EndMyselfPrematurely>();
 
    star.Add(objs);
    
